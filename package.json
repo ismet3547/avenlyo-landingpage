@@ -1,0 +1,28 @@
+{
+  "name": "avenlyo-landingpage",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "node scripts/dev.mjs",
+    "build": "pnpm --filter @avenlyo/landing-demo build",
+    "start": "pnpm --filter @avenlyo/landing-demo start",
+    "lint": "eslint apps/web",
+    "typecheck": "pnpm --filter @avenlyo/landing-demo typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "22.20.1",
+    "eslint": "9.39.5",
+    "eslint-config-next": "15.5.23",
+    "eslint-config-prettier": "10.1.8",
+    "prettier": "3.9.6",
+    "typescript": "5.9.3"
+  }
+}
